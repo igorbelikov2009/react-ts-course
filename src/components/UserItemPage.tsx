@@ -9,6 +9,8 @@ interface UserItemPageParams {
 
 const UserItemPage: FC = () => {
   const [user, setUser] = useState<IUser | null>(null);
+
+  // id будем доставать из строки запроса
   const params = useParams<UserItemPageParams>();
   const history = useHistory();
 
